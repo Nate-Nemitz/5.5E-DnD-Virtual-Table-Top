@@ -1,25 +1,12 @@
 from random import randint as Roll
 
-class RollDice():
-    def D4():
-        return Roll(1,4)
-    
-    def D6():
-        return Roll(1,6)
-    
-    def D8():
-        return Roll(1,8)
-    
-    def D10():
-        return Roll(1,10)
-    
-    def D12():
-        return Roll(1,12)
-    
-    def D20():
-        return Roll(1,20)
-    
-    def D100():
-        return Roll(1,100)
+a=int(input("How many sides?"))
+b=int(input("How many die?"))
 
-print(RollDice.D20())#test
+class Dice():
+    def roll(sides, numDice=1):
+        RunTot=0
+        for i in range(numDice):
+            RunTot=Roll(1,sides)+RunTot
+        return RunTot
+print(Dice.roll(a,b))

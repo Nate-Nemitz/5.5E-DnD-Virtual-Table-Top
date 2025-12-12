@@ -9,4 +9,4 @@ class Dice():
         for i in range(numDice):
             RunTot=Roll(1,sides)+RunTot
         return RunTot
-print(Dice.roll(a,b))
+print(Dice.roll(a,b))#test

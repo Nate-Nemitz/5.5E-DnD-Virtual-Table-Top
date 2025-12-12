@@ -1,12 +1,7 @@
-from random import randint as Roll
+from random import randint
 
-a=int(input("How many sides?"))
-b=int(input("How many die?"))
-
-class Dice():
-    def roll(sides, numDice=1):
-        RunTot=0
-        for i in range(numDice):
-            RunTot=Roll(1,sides)+RunTot
-        return RunTot
-print(Dice.roll(a,b))#test
+class Dice:
+    def Roll(sides=20, num_dice=1):
+        return sum(randint(1, sides) for i in range(num_dice))
+print(Dice.Roll())#test
+print(Dice.Roll(8,6))#test

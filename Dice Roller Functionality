@@ -1,1 +1,25 @@
-print ("test hello world")
+from random import randint as Roll
+
+class RollDice():
+    def D4():
+        return Roll(1,4)
+    
+    def D6():
+        return Roll(1,6)
+    
+    def D8():
+        return Roll(1,8)
+    
+    def D10():
+        return Roll(1,10)
+    
+    def D12():
+        return Roll(1,12)
+    
+    def D20():
+        return Roll(1,20)
+    
+    def D100():
+        return Roll(1,100)
+
+print(RollDice.D20())#test

@@ -3,7 +3,7 @@ Open source project built to learn full stack software development with the goal
 
 ## Current Features
 
-- Dice rolling system with standard D&D dice (d4, d6, d8, d10, d12, d20, d100)
+- Dice rolling system with standard D&D dice (d4, d6, d8, d10, d12, d20, d100) https://github.com/Nate-Nemitz/5.5E-DnD-Virtual-Table-Top/blob/Dice-Roller-Functionality/Dice%20Roller%20Functionality
 
 ## Planned Features
 

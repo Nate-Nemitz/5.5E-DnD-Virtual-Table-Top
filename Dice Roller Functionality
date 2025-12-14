@@ -3,5 +3,12 @@ from random import randint
 class Dice:
     def Roll(sides=20, num_dice=1):
         return sum(randint(1, sides) for i in range(num_dice))
+    def Adv_Roll():
+        return max([randint(1,20),randint(1,20)])
+    def Dis_Roll():
+        return min([randint(1,20),randint(1,20)])
+
 print(Dice.Roll())#test
 print(Dice.Roll(8,6))#test
+print(Dice.Adv_Roll())#test
+print(Dice.Dis_Roll())#test

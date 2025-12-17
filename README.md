@@ -24,7 +24,7 @@ Open source project built to learn full stack software development with the goal
 
 This VTT is being developed as both a functional gaming platform and a learning project to build programming skills through practical application. While a passion project at its core, I am looking to showcase professional ability in software development.
 
-If you have ideas for added DnD modules you would like to see or if you have tips/tricks/advice, please feel free to reach out at https://www.linkedin.com/in/nate-nemitz-1819ab189/.
+If you have ideas for added DnD modules you would like to see or if you have tips/tricks/advice, please feel free to reach out at https://www.linkedin.com/in/nate-nemitz-1819ab189/ or by submitting an issue request.
 
 ## License
 

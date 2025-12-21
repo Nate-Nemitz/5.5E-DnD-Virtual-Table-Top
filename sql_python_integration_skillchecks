@@ -1,0 +1,36 @@
+import sqlite3
+
+conn=sqlite3.connect("character_skill_test.db")
+cursor=conn.cursor()
+write_read=cursor.execute()
+
+write_read('''
+               CREATE TABLE IF NOT EXISTS test_characters( 
+               id INTEGER PRIMARY KEY,
+               name TEXT NOT NULL,
+               str INTEGER,
+               dex INTEGER,
+               con INTEGER,
+               int INTEGER,
+               wis INTEGER,
+               cha INTEGER)
+           ''')
+write_read('''
+           INSERT INTO test_characters(
+           id, name, str, dex, con, int, wis, cha)VALUES(
+           1,  Luke, 16,  14,  15,  10,  12,  8)
+           ''')
+
+conn.commit()
+
+write_read('''
+           SELECT * FROM test_characters
+           WHERE id=1
+           ''')
+
+conn.row_factory=sqlite3.Row()
+Luke=cursor.fetchone()
+
+print(f"Name: {Luke['name']}, Strength: {Luke['str']}") #test
+               
+conn.close()

@@ -1,7 +1,0 @@
-import sqlite3
-
-conn=sqlite3.connect("character skill test file")
-cursor=conn.cursor()
-cursor.execute('''CREATE TABLE IF NOT EXISTS test, Bob TEXT PRIMARY KEY NOT NULL, strength INT, dexterity INT, constitution INT, intelligence INT, wisdom INT, charisma INT''')
-conn.commit()
-conn.close()

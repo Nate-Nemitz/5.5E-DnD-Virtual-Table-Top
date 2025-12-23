@@ -4,6 +4,7 @@ Open source project built to learn full stack software development with the goal
 ## Current Features
 
 - Dice rolling system with standard D&D dice (d4, d6, d8, d10, d12, d20, d100) https://github.com/Nate-Nemitz/5.5E-DnD-Virtual-Table-Top/blob/Dice-Roller-Functionality/Dice%20Roller%20Functionality
+- Core game engine connection to SQL database functionality for skill checks, feats, inventory, and related feature buildout. https://github.com/Nate-Nemitz/5.5E-DnD-Virtual-Table-Top/blob/SQL-Database-Integration-and-Skill-Checks/sql_python_integration_skillchecks
 
 ## Planned Features
 
@@ -24,7 +25,7 @@ Open source project built to learn full stack software development with the goal
 
 This VTT is being developed as both a functional gaming platform and a learning project to build programming skills through practical application. While a passion project at its core, I am looking to showcase professional ability in software development.
 
-If you have ideas for added DnD modules you would like to see or if you have tips/tricks/advice, please feel free to reach out at https://www.linkedin.com/in/nate-nemitz-1819ab189/ or by submitting an issue request.
+If you have ideas for added DnD modules you would like to see or if you have tips/tricks/advice, please feel free to reach out at https://www.linkedin.com/in/nate-nemitz/ or by submitting an issue request.
 
 ## License
 

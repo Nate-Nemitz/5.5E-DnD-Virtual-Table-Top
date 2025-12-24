@@ -1,6 +1,7 @@
 import sqlite3
 
 conn=sqlite3.connect("character_skill_test.db")
+conn.row_factory=sqlite3.Row
 cursor=conn.cursor()
 
 cursor.execute('''
@@ -21,11 +22,16 @@ cursor.execute('''
                ''')
 
 conn.commit()
-conn.row_factory=sqlite3.Row
-cursor=conn.cursor()
-cursor.execute("SELECT * FROM test_characters WHERE id=1")
+cursor.execute("SELECT * FROM test_characters WHERE name='Luke'")
 Luke=cursor.fetchone()
 
-print(f"Name: {Luke['name']}, Strength: {Luke['str']}") #test
+#test print for data retrieval
+print(f"Name: {Luke['name']}")
+print(f"Strength: {Luke['str']}")
+print(f"Dexterity: {Luke['dex']}")
+print(f"Constitution: {Luke['con']}")
+print(f"Intelligence: {Luke['int']}")
+print(f"Wisdom: {Luke['wis']}")
+print(f"Charisma: {Luke['cha']}")
             
 conn.close()

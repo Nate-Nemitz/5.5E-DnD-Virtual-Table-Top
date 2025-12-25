@@ -24,6 +24,7 @@ cursor.execute('''
 conn.commit()
 cursor.execute("SELECT * FROM test_characters WHERE name='Luke'")
 Luke=cursor.fetchone()
+conn.close()
 
 #test print for data retrieval
 print(f"Name: {Luke['name']}")
@@ -33,5 +34,3 @@ print(f"Constitution: {Luke['con']}")
 print(f"Intelligence: {Luke['int']}")
 print(f"Wisdom: {Luke['wis']}")
 print(f"Charisma: {Luke['cha']}")
-            
-conn.close()

@@ -1,6 +1,6 @@
 import sqlite3
 
-class db_skills():
+class char_db():
     def create_char_table():
         cursor.execute('''
         CREATE TABLE IF NOT EXISTS test_characters( 
@@ -32,7 +32,7 @@ class db_skills():
         stealth REAL DEFAULT 0,
         survival REAL DEFAULT 0
         ''')
-    def write_char_column():
+    def write_char_columns():
         cursor.execute('''
         INSERT OR IGNORE INTO test_characters(
         id, name, str, dex, con, int, wis, cha)VALUES(
@@ -46,9 +46,9 @@ def char_creation():
     conn.row_factory=sqlite3.Row
     cursor=conn.cursor()
 
-    db_skills.create_char_table()
-    db_skills.write_char_column()
-    db_skills.read_char_columns()
+    char_db.create_char_table()
+    char_db.write_char_columns()
+    char_db.read_char_columns()
 
     conn.commit()
     Luke=cursor.fetchone()
